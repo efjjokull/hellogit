@@ -13,5 +13,5 @@ async function fnc(){
 }
 
 async function load_Model(){
-    const model = await tf.loadLayersModel("iris/model/model.json")
+    const model = await tf.loadLayersModel("iris/model/model.json");
 }
