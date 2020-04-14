@@ -9,8 +9,8 @@ async function fnc(){
     let prediction = await model.predict(tf.reshape(input,[1,4])).data();
 
     console.log(a,b,c,d);
-    alert("setosa : "+Math.round(prediction[0]*100)+"\n"+"versicolor : "+Math.round(prediction[1]*100)
-    +"\n"+"virginica : "+Math.round(prediction[2]*100)+"\n");
+    alert("setosa : "+Math.round(prediction[0]*100)+"%\n"+"versicolor : "+Math.round(prediction[1]*100)
+    +"%\n"+"virginica : "+Math.round(prediction[2]*100)+"%\n");
 }
 
 async function load_Model(){
